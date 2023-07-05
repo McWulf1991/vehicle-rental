@@ -131,7 +131,7 @@ export class RentalSystem {
 
         Athena.controllers.interaction.append({
             uid: `rental-shop-interact-${shop.uid}`,
-            position: shop.pos,
+            position: new alt.Vector3(shop.pos.x, shop.pos.y, shop.pos.z-1),
             description: 'Rent a Vehicle with Shift + E',
             callback: (player: alt.Player) => {
                 RentalSystem.createMenu(player, list, uid, vehicles, shop.spawnspot, shop.price)
@@ -151,12 +151,11 @@ export class RentalSystem {
 
         Athena.controllers.marker.append({
             pos: new alt.Vector3(shop.spawnspot.x, shop.spawnspot.y, shop.spawnspot.z),
-            type: 36,
-            color: new alt.RGBA(200, 200, 10, 100),
+            type: 23,
+            color: new alt.RGBA(200, 200, 10, 50),
             scale: new alt.Vector3(2, 2, 2),
             maxDistance: 50,
             uid: `rental-shop-marker-spawnspot-${shop.uid}`,
-            bobUpAndDown: true,
         })
     }
 
