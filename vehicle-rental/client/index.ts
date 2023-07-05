@@ -42,7 +42,7 @@ function menuCreation(list: string, uid: string, vehicles: {name: string, hash: 
                             accept: 'Ja',
                             decline: 'Nein',
                         },
-                        placeholder: `Möchtest du das Fahrzeug 24 Stunden für ${price} ausleihen?`,
+                        placeholder: `Möchtest du das Fahrzeug 24 Stunden für $ ${price} ausleihen?`,
                         blur: true,
                         darken: true,
                         hideHud: true,

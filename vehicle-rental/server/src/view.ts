@@ -150,7 +150,7 @@ export class RentalSystem {
         })
 
         Athena.controllers.marker.append({
-            pos: new alt.Vector3(shop.spawnspot.x, shop.spawnspot.y, shop.spawnspot.z),
+            pos: new alt.Vector3(shop.spawnspot.x, shop.spawnspot.y, shop.spawnspot.z-1),
             type: 23,
             color: new alt.RGBA(200, 200, 10, 50),
             scale: new alt.Vector3(2, 2, 2),
