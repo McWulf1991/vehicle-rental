@@ -12,7 +12,7 @@ This repository contains a plugin created for the Athena Framework, version 5.1.
 
 1. Clone the repository to your local machine or download the source code as a ZIP file.
 2. Ensure you have the Athena Framework, version 5.1.0, installed and configured.
-3. Copy the file "car-startup-sound.ogg" to the directory "src-webviews/plugin/assets/sounds".
+3. Copy the file "car-startup.ogg" to the directory "src-webviews/plugin/assets/sounds".
 
 ## Usage
 
