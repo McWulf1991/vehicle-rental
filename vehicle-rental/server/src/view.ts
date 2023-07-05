@@ -160,7 +160,7 @@ export class RentalSystem {
     }
 
     static createMenu(player: alt.Player, list: string, uid: string, vehicles: {name: string, hash: number}[], spawnspot: alt.Vector3, price: number) {
-        Athena.player.emit.sound2D(player, 'car_startup', 0.3);
+        Athena.player.emit.sound2D(player, `@plugins/sounds/vehicle-rental/car_startup.ogg`, 0.3);
         alt.emitClient(player, RENTAL_EVENTS.MENU, list, uid, vehicles, spawnspot, price);
     }
 }
